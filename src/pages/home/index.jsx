@@ -1,7 +1,11 @@
 import React from "react";
 
+import FeaturedPost from "../../components/featured-post";
+
 export default function Home() {
-    return <div>
-        <h1>Página Home</h1>
-    </div>
+    return (
+        <div>
+            <FeaturedPost />
+        </div>
+    );
 }

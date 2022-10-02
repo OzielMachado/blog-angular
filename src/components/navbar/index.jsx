@@ -1,20 +1,20 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
-import "./style.css";
+import "./styles.css";
 
 export default function Navbar() {
     return (
         <nav className="navbar">
             <div>
-                <a href="/" className="logo">
-                    <h3>Meu Blog</h3>
-                </a>
+                <Link to="/" className="logo">Meu Blog</Link>
             </div>
             <div>
-                <a href="/" className="nav-link">Home</a>
-                <a href="/post" className="nav-link">Sobre</a>
-                <a href="/contact" className="nav-link">Contato</a>
-                <a href="/Culture" className="nav-link">Cultura</a>
+
+                <Link to="/" className="nav-link">Home</Link>
+                <Link to="/post" className="nav-link">Sobre</Link>
+                <Link to="/contact" className="nav-link">Contato</Link>
+                <Link to="/Culture" className="nav-link">Cultura</Link>
             </div>
         </nav>
     );
